@@ -1,0 +1,19 @@
+id: dect6_dect_deframer
+label: DECT6 Deframer
+category: '[dect6]'
+
+templates:
+  imports: import dect6
+  make: dect6.dect_deframer()
+
+inputs:
+-   domain: message
+    id: pdu
+    optional: true
+
+outputs:
+-   domain: message
+    id: pdu
+    optional: true
+
+file_format: 1
